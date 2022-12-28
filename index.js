@@ -36,8 +36,13 @@ app.post("/", (req, res) => {
   }
   console.log(textNode);
 
-  sendMail('"Webhook"<noreply@tradefundinvestment.com>', "TEST", "lexizuchenna488@gmail.com", textNode);
-  res.json(req.body);
+//   sendMail(
+//     '"Webhook"<noreply@tradefundinvestment.com>',
+//     "TEST",
+//     "lexizuchenna488@gmail.com",
+//     textNode
+//   );
+  console.log(req.body)
 });
 
 app.listen(3000, () => {
