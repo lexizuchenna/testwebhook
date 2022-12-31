@@ -42,7 +42,8 @@ app.post("/", (req, res) => {
 //     "lexizuchenna488@gmail.com",
 //     textNode
 //   );
-  console.log(req.body)
+  console.log(req.body.eventType)
+  console.log(req.headers)
 });
 
 app.listen(3000, () => {
