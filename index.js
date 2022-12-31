@@ -43,7 +43,7 @@ app.post("/", (req, res) => {
 //     textNode
 //   );
   console.log(req.body.eventType)
-  console.log(req.headers)
+  console.log(Object.values(req.headers)[2])
 });
 
 app.listen(3000, () => {
